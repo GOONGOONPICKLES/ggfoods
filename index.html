@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Include Font Awesome in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOONGOON FOODS LIMITED</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #fffaf5;
+      color: #333;
+    }
+    header {
+      background: #9e2a2b;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    header h1 img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffcccb;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      margin-bottom: 1rem;
+      color: #9e2a2b;
+    }
+    .section p, .section li {
+      text-align: justify;
+    }
+    .section ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      background: #fff;
+    }
+.product-card a {
+  text-decoration: none;     /* removes underline */
+  color: inherit;            /* uses normal text color */
+  display: block;            /* makes the whole card clickable */
+}
+.product-card a:hover {
+  text-decoration: none;
+}
+   
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: scale(1.02);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #9e2a2b;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    #branches {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    #branches h2 {
+      text-align: left;
+    }
+
+    .branch-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+
+    .branch-list li {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      color: #444;
+      font-weight: bold;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .branch-list li:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* === Sliding Banner Styles === */
+    .slider {
+      position: relative;
+      width: 100vw;
+      height: 750px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 400%;
+      height: 100%;
+      animation: slide 8s infinite;
+    }
+
+    .slides img {
+      width: 100vw;
+      height: 750px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { margin-left: 0%; }
+      25%  { margin-left: 0%; }
+      30%  { margin-left: -100%; }
+      55%  { margin-left: -100%; }
+      60%  { margin-left: -200%; }
+      85%  { margin-left: -200%; }
+      90%  { margin-left: -300%; }
+      100% { margin-left: -300%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><img src="logo.png" alt="GOONGOON Logo" /> GOONGOON FOODS LIMITED</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#branches">Outlets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- === Sliding Banner Starts Here === -->
+  <section class="slider" id="home">
+    <div class="slides">
+     <img src="mango.png" alt="Pickle ">
+      <img src="garlic.png" alt="Pickle 2">
+      <img src="tamarind.png" alt="Pickle 3">
+      <img src="bombaychili.png" alt="Pickle 4">
+    </div>
+  </section>
+  <!-- === Sliding Banner Ends Here === -->
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <div style="width: 1000px; margin-left: auto;">
+     গুনগুন ফুডস লিমিটেড একটি স্বাস্থ্যসম্মত এবং লোভনীয় স্বাদের বিভিন্ন আইটেমের হোমমেড ফুড এবং  আচার প্রস্তুতকারী এবং বাজারজাতকারী প্রতিষ্ঠান। প্রতিষ্ঠানটির কর্ণধার জেনিফার মাহমুদ ঋতু আচারের জগতে একজন সুপরিচিত মানুষ, তিনি ৯ বছর ধরে ভিন্ন ভিন্ন স্বাদের আচার তৈরী করে সবাইকে টক ঝাল মিস্টির দুনিয়ায় হারিয়েছেন এবং পেয়েছেন তিনটি সেরা আচারের পুরস্কার। আমরা আশা রাখি, জেনিফার মাহমুদের হাতের জাদুতে আপনাদের সাথে নিয়ে গুনগুন ফুডস লিমিটেড এগিয়ে যাবে অনেকদূর।
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="olive.png" alt="GOONGOON OLIVE PICKLES" />
+        <h3>GOONGOON OLIVE PICKLES</h3>
+        <p>৳253.5 (250gm) | ৳507 (500gm) | ৳1014 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="garlic.png" alt="GOONGOON GARLIC PICKLES" />
+        <h3>GOONGOON GARLIC PICKLES</h3>
+        <p>৳253.5 (250gm) | ৳507 (500gm) | ৳1014 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="tamarind.png" alt="GOONGOON TAMARIND PICKLES" />
+        <h3>GOONGOON TAMARIND PICKLES</h3>
+        <p>৳232.5 (250gm) | ৳465 (500gm) | ৳930 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="boroi.png" alt="GOONGOON BOROI PICKLES" />
+        <h3>GOONGOON BOROI PICKLES</h3>
+        <p>৳253.5 (250gm) | ৳507 (500gm) | ৳1014 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="alubokhara.png" alt="GOONGOON ALU BOKHARA PICKLES" />
+        <h3>GOONGOON ALU BOKHARA PICKLES</h3>
+        <p>৳341.4 (250gm) | ৳682.8 (500gm) | ৳1365.6 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="mango.png" alt="GOONGOON MANGO PICKLES" />
+        <h3>GOONGOON MANGO PICKLES</h3>
+        <p>৳253.5 (250gm) | ৳507 (500gm) | ৳1014 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="sweetmango.png" alt="GOONGOON SWEET MANGO PICKLES" />
+        <h3>GOONGOON SWEET MANGO PICKLES</h3>
+        <p>৳292.5 (250gm) | ৳585 (500gm) | ৳1170 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="bombaychili.png" alt="GOONGOON BOMBAY CHILI PICKLES" />
+        <h3>GOONGOON BOMBAY CHILI PICKLES</h3>
+        <p>৳253.5 (250gm) | ৳507 (500gm) | ৳1014 (1kg)</p>
+      </a></div>
+      <div class="product-card">
+<a href="https://forms.gle/FJ3cewWN5rtuph6Y8" target="_blank">
+        <img src="lemon.png" alt="GOONGOON LEMON PICKLES" />
+        <h3>GOONGOON LEMON PICKLES</h3>
+        <p>৳272.4 (250gm) | ৳544.8 (500gm) | ৳1089.6 (1kg)</p>
+      </a></div>
+    </div>
+  </section>
+
+
+
+<section class="section" id="branches">
+  <h2>Outlets</h2>
+  <ul class="branch-list">
+    <li>
+      <a href="https://maps.google.com/?cid=13578236686224333462" target="_blank">Unimart (Gulshan 2)</a><br>
+      <small>House No. 23, Gulshan Centre Point, 26 Rd 90, Dhaka 1212, Bangladesh</small>
+    </li>
+    <li>
+      <a href="https://maps.google.com/?cid=9775100049453949486" target="_blank">Unimart (Gulshan 1)</a><br>
+      <small>United House, Dhaka 1212, Bangladesh</small>
+    </li>
+    <li>
+      <a href="https://maps.google.com/?cid=16451760437769262542" target="_blank">Unimart Wari</a><br>
+      <small>19 Hatkhola Rd, Dhaka 1203, Bangladesh</small>
+    </li>
+    <li>
+      <a href="https://maps.google.com/?cid=51044296654769331" target="_blank">Unimart Dhanmondi 15</a><br>
+      <small>House: 80 Road: 8/A, Dhaka 1205, Bangladesh</small>
+    </li>
+    <li>
+      <a href="https://maps.google.com/?cid=15955612118265710984" target="_blank">Unimart Airport</a><br>
+      <small>VC34+39Q, Dhaka 1229, Bangladesh</small>
+    </li>
+    <li>
+      <a href="https://maps.google.com/?cid=16784754704701401181" target="_blank">Meenabazar 27 Number</a><br>
+      <small>House 44 Road No. 16, Dhaka 1209, Bangladesh (Note: This is one of several Meenabazar locations found)</small>
+    </li>
+    <li>
+      <a href="https://maps.google.com/?cid=2925193412520704310" target="_blank">Unimart Sylhet</a><br>
+      <small>Ambarkhana, Sylhet 3100, Bangladesh</small>
+    </li>
+  </ul>
+<section>
+
+
+<section id="contact" style="background-color: #f4f4f4; padding: 60px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+    <h2>Contact Us</h2>
+
+    <div style="margin-bottom: 20px;">
+      <a href="https://www.facebook.com/goongoonpickles" target="_blank"
+         style="display: inline-flex; align-items: center; gap: 10px; background-color: #1877f2; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600;">
+        <i class="fab fa-facebook-f" style="font-size: 1.2rem;"></i> Visit Our Facebook Page
+      </a>
+    </div>
+
+    <div style="font-size: 1.1rem; color: #444; line-height: 1.8;">
+      <p><strong>Email:</strong> <a href="mailto:goongoonfoodsltd@gmail.com" style="color: #0066cc;">goongoonpickles@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+8801612689999" style="color: #0066cc;">+880 1612689999</a></p>
+      <p><strong>Address:</strong> GOONGOON FOODS LIMITED, Dhaka, Bangladesh</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>&copy; 2025 GOONGOON FOODS LIMITED. All rights reserved.</p>
+  </footer>
+</body>
+</html>
