@@ -138,37 +138,48 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
-    /* === Sliding Banner Styles === */
-    .slider {
-      position: relative;
-      width: 100vw;
-      height: 750px;
-      overflow: hidden;
-    }
+  /* === Sliding Banner Styles === */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-    .slides {
-      display: flex;
-      width: 400%;
-      height: 100%;
-      animation: slide 8s infinite;
-    }
+.slides {
+  display: flex;
+  width: 400%;
+  animation: slide 8s infinite;
+}
 
-    .slides img {
-      width: 100vw;
-      height: 750px;
-      object-fit: cover;
-    }
+.slides img {
+  width: 100%;
+  height: auto;           /* উচ্চতা স্বয়ংক্রিয় */
+  object-fit: cover;      /* চাইলে object-fit তোমার পছন্দ অনুযায়ী */
+}
 
-    @keyframes slide {
-      0%   { margin-left: 0%; }
-      25%  { margin-left: 0%; }
-      30%  { margin-left: -100%; }
-      55%  { margin-left: -100%; }
-      60%  { margin-left: -200%; }
-      85%  { margin-left: -200%; }
-      90%  { margin-left: -300%; }
-      100% { margin-left: -300%; }
-    }
+@keyframes slide {
+  0%   { margin-left: 0%; }
+  25%  { margin-left: 0%; }
+  30% { margin-left: -100%; }
+  55% { margin-left: -100%; }
+  60% { margin-left: -200%; }
+  85% { margin-left: -200%; }
+  90% { margin-left: -300%; }
+  100%{ margin-left: -300%; }
+}
+
+/* মোবাইলে আরও ভালো দেখার জন্য */
+@media (max-width: 767px) {
+  .slider {
+    height: auto;
+  }
+
+  .slides img {
+    height: auto;
+    object-fit: cover;
+  }
+}
+
   </style>
 </head>
 <body>
